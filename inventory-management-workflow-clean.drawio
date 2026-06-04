@@ -1,0 +1,161 @@
+<mxfile host="app.diagrams.net" modified="2026-06-04T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="ims-clean-workflow" name="IMS Clean Workflow">
+    <mxGraphModel dx="2400" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="Inventory Management System - High-Level Workflow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=30;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="610" y="40" width="1180" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="landing" value="Landing Page" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=18;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="130" width="460" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="auth" value="Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;fontSize=18;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="260" width="460" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="roleSplit" value="Role-Based Access" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FDE68A;strokeColor=#F59E0B;fontSize=18;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="390" width="300" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="superLane" value="SUPER ADMIN" style="swimlane;html=1;horizontal=0;startSize=44;rounded=1;fillColor=#EFF6FF;strokeColor=#2563EB;fontColor=#1E3A8A;fontSize=16;fontStyle=1;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="620" width="390" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="retailerAdminLane" value="RETAILER ADMIN" style="swimlane;html=1;horizontal=0;startSize=44;rounded=1;fillColor=#ECFDF5;strokeColor=#16A34A;fontColor=#14532D;fontSize=16;fontStyle=1;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="620" width="390" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="retailerManagerLane" value="RETAILER MANAGER" style="swimlane;html=1;horizontal=0;startSize=44;rounded=1;fillColor=#FFF7ED;strokeColor=#F97316;fontColor=#7C2D12;fontSize=16;fontStyle=1;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="980" y="620" width="390" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="procurementLane" value="PROCUREMENT MANAGER" style="swimlane;html=1;horizontal=0;startSize=44;rounded=1;fillColor=#F5F3FF;strokeColor=#7C3AED;fontColor=#4C1D95;fontSize=16;fontStyle=1;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="620" width="390" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="auditorLane" value="AUDITOR" style="swimlane;html=1;horizontal=0;startSize=44;rounded=1;fillColor=#FEF2F2;strokeColor=#DC2626;fontColor=#7F1D1D;fontSize=16;fontStyle=1;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="620" width="390" height="330" as="geometry" />
+        </mxCell>
+
+        <mxCell id="superModules" value="Dashboard&#xa;Tenant Management&#xa;Billing&#xa;Analytics&#xa;User Management&#xa;Notifications&#xa;Settings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#60A5FA;fontSize=15;fontColor=#111827;align=left;spacing=18;spacingLeft=20;" vertex="1" parent="superLane">
+          <mxGeometry x="70" y="72" width="275" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="retailerAdminModules" value="Dashboard&#xa;Products&#xa;Inventory&#xa;Warehouses&#xa;Suppliers&#xa;Purchase Orders&#xa;AI Dashboard&#xa;Notifications&#xa;Reports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#22C55E;fontSize=15;fontColor=#111827;align=left;spacing=18;spacingLeft=20;" vertex="1" parent="retailerAdminLane">
+          <mxGeometry x="70" y="58" width="275" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="retailerManagerModules" value="Dashboard&#xa;Inventory&#xa;Warehouses&#xa;Suppliers&#xa;Stock Adjustments&#xa;Notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FB923C;fontSize=15;fontColor=#111827;align=left;spacing=18;spacingLeft=20;" vertex="1" parent="retailerManagerLane">
+          <mxGeometry x="70" y="82" width="275" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="procurementModules" value="Dashboard&#xa;Purchase Orders&#xa;Suppliers&#xa;Inventory Receiving&#xa;Notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A78BFA;fontSize=15;fontColor=#111827;align=left;spacing=18;spacingLeft=20;" vertex="1" parent="procurementLane">
+          <mxGeometry x="70" y="92" width="275" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="auditorModules" value="Dashboard&#xa;Audit Logs&#xa;Compliance Reports&#xa;User Activity&#xa;Notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#F87171;fontSize=15;fontColor=#111827;align=left;spacing=18;spacingLeft=20;" vertex="1" parent="auditorLane">
+          <mxGeometry x="70" y="92" width="275" height="185" as="geometry" />
+        </mxCell>
+
+        <mxCell id="aiServices" value="AI Services&#xa;&#xa;Forecasting&#xa;Recommendations&#xa;Insights&#xa;Risk Detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFEFF;strokeColor=#06B6D4;fontSize=17;fontStyle=1;fontColor=#164E63;align=center;spacing=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1050" width="500" height="190" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sharedServices" value="Shared Services&#xa;&#xa;Notifications&#xa;Search&#xa;Reports&#xa;Logout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;fontSize=17;fontStyle=1;fontColor=#334155;align=center;spacing=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="1050" width="500" height="190" as="geometry" />
+        </mxCell>
+
+        <mxCell id="systemEvents" value="System Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontSize=16;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1080" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationEngine" value="Notification Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontSize=16;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1190" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="roleDelivery" value="Role-Based Delivery" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontSize=16;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1300" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="users" value="Users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;fontSize=16;fontStyle=1;fontColor=#111827;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1410" width="260" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;" edge="1" parent="1" source="landing" target="auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;" edge="1" parent="1" source="auth" target="roleSplit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e3" style="endArrow=block;html=1;rounded=0;strokeColor=#2563EB;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="roleSplit" target="superLane">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;rounded=0;strokeColor=#16A34A;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="roleSplit" target="retailerAdminLane">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="725" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" style="endArrow=block;html=1;rounded=0;strokeColor=#F97316;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="roleSplit" target="retailerManagerLane">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" style="endArrow=block;html=1;rounded=0;strokeColor=#7C3AED;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="roleSplit" target="procurementLane">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1625" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" style="endArrow=block;html=1;rounded=0;strokeColor=#DC2626;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="roleSplit" target="auditorLane">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2075" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="e8" style="endArrow=block;html=1;rounded=0;strokeColor=#06B6D4;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="retailerAdminLane" target="aiServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="endArrow=block;html=1;rounded=0;strokeColor=#06B6D4;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="retailerManagerLane" target="aiServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="endArrow=block;html=1;rounded=0;strokeColor=#06B6D4;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="procurementLane" target="aiServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e11" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="superLane" target="sharedServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="retailerAdminLane" target="sharedServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="retailerManagerLane" target="sharedServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="procurementLane" target="sharedServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="auditorLane" target="sharedServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e16" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;" edge="1" parent="1" source="systemEvents" target="notificationEngine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;" edge="1" parent="1" source="notificationEngine" target="roleDelivery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;" edge="1" parent="1" source="roleDelivery" target="users">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" style="endArrow=block;html=1;rounded=0;strokeColor=#64748B;strokeWidth=2;dashed=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="notificationEngine" target="sharedServices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
